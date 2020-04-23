@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>收起</title>
+    <desc>Created with Sketch.</desc>
+    <g id="改版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="产品分类维护(添加节点1)" transform="translate(-62.000000, -221.000000)" fill="#999999" fill-rule="nonzero">
+            <g id="数库分类-&lt;v16&gt;" transform="translate(60.000000, 219.000000)">
+                <g id="间距-&lt;h6-&gt;" transform="translate(2.000000, 0.000000)">
+                    <path d="M7.78561728,4 L6.524822,4 C6.25061919,4 5.98985769,4.11221374 5.82856192,4.30229008 L3.0005094,7.63206107 L0.172456868,4.30229008 C0.0111610968,4.11221374 -0.246912138,4 -0.523803212,4 L-1.78459849,4 C-1.95933558,4 -2.06148957,4.16946565 -1.95933558,4.29083969 L2.82577231,9.92442748 C2.91179672,10.0251908 3.08653381,10.0251908 3.17255822,9.92442748 L7.95766611,4.29083969 C8.06250836,4.16946565 7.96035437,4 7.78561728,4 Z" id="收起" transform="translate(3.000000, 7.000000) rotate(-90.000000) translate(-3.000000, -7.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

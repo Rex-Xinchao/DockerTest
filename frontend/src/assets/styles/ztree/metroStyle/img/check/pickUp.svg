@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>收起</title>
+    <desc>Created with Sketch.</desc>
+    <g id="收起" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(8.000000, 8.000000) rotate(-90.000000) translate(-8.000000, -8.000000) " fill-rule="nonzero">
+            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="16" height="16"></rect>
+            <path d="M8.0113523,10.5518538 C7.88535772,10.5518538 7.76462358,10.5011362 7.67642738,10.4111332 L3.61211098,6.26416889 C3.43080991,6.0792063 3.43381588,5.78228761 3.61879445,5.60100252 C3.80375705,5.41973342 4.10069173,5.42270741 4.28196083,5.60768598 L8.0113523,9.41291405 L11.7407438,5.60768598 C11.9220129,5.42269141 12.2189156,5.41966945 12.4039102,5.60100252 C12.5889047,5.78230359 12.5918947,6.0792063 12.4105936,6.26416889 L8.34627722,10.4111333 C8.25808102,10.5011362 8.13736288,10.5518538 8.0113523,10.5518538 Z" id="路径" stroke="#515A6E" stroke-width="0.3" fill="#515A6E"></path>
+        </g>
+    </g>
+</svg>

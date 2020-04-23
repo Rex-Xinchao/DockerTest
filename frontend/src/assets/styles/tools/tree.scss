@@ -1,0 +1,639 @@
+@mixin before-icon {
+  content: " ";
+  width: 12px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 11px;
+  margin-right: 8px;
+}
+
+@mixin leftRight-icon {
+  &:after {
+    width: 14px;
+    height: 14px;
+    content: " ";
+    display: block;
+    background-image: url("~@/assets/imgs/leftRight.png");
+    background-size: cover;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+  }
+}
+
+@mixin upDown-icon {
+  &:after {
+    width: 14px;
+    height: 14px;
+    content: " ";
+    display: block;
+    background-image: url("~@/assets/imgs/upDown.png");
+    background-size: cover;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+  }
+}
+
+$color-father_active: #3e73e3;
+$color-existAdd: #a55d43;
+$color-existRename: #009688;
+$color-existMove: #2094ef;
+$color-existUnMap: #54869f;
+$color-deleteMapped: #5a595c;
+$color-mulMapped: #c66f8f;
+$color-source-sign: #3e73e3;
+$color-udf: #464c5a;
+$color-sw: #338ccc;
+
+// tooltip下拉图标
+.addNode_before {
+  display: flex;
+  align-content: center;
+  &:before {
+    @include before-icon;
+    background-image: url("~@/assets/imgs/edit-icons/addNode.png");
+  }
+
+  &:hover {
+    color: #3e73e3 !important;
+    &:before {
+      background-image: url("~@/assets/imgs/edit-icons/addNode_active.png");
+    }
+  }
+}
+
+.delNode_before {
+  display: flex;
+  align-content: center;
+  &:before {
+    @include before-icon;
+    background-image: url("~@/assets/imgs/edit-icons/delLink.png");
+  }
+
+  &:hover {
+    color: #3e73e3 !important;
+    &:before {
+      background-image: url("~@/assets/imgs/edit-icons/delLink_active.png");
+    }
+  }
+}
+
+.editNode_before {
+  display: flex;
+  align-content: center;
+  &:before {
+    @include before-icon;
+    background-image: url("~@/assets/imgs/edit-icons/editLink.png");
+  }
+
+  &:hover {
+    color: #3e73e3 !important;
+    &:before {
+      background-image: url("~@/assets/imgs/edit-icons/editLink_active.png");
+    }
+  }
+}
+
+// 覆盖部分ztree样式
+.ztree {
+  overflow: hidden !important;
+  min-width: 300px;
+  padding: 0px 10px 10px 10px !important;
+
+  li {
+    position: relative;
+    ul {
+      padding: 0 !important;
+
+      li {
+        margin-left: 18px;
+      }
+    }
+
+    a.curSelectedNode_Edit {
+      width: calc(100% - 21px);
+      border-color: $color-primary_hover !important;
+
+      input.rename {
+        width: 100% !important;
+        height: 100% !important;
+        outline: none;
+        border: none !important;
+        background: none !important;
+      }
+    }
+  }
+
+  // 标签样式
+  .space {
+    color: none;
+  }
+  .tree-sign {
+    font-style: normal;
+  }
+
+  .source-sign {
+    padding: 2px 4px;
+    font-style: normal;
+    background-color: rgba(50, 140, 204, 0.1) !important;
+    color: $color-source-sign;
+    line-height: 16px;
+    font-size: 12px!important;
+  }
+
+  .sign-udf {
+    background-color: rgba(153, 153, 153, 0.1) !important;
+    color: $color-udf;
+  }
+
+  .sign-sw {
+    color: $color-sw;
+  }
+
+  .sign-existAdd,
+  .sign-existRename,
+  .sign-existMove,
+  .sign-existUnMap,
+  .sign-deleteMapped,
+  .sign-mulMapped,
+  .sign-isEmpty,
+  .source-sign {
+    display: none !important;
+    font-size: 14px;
+  }
+
+  .text-active {
+    span {
+      color: #ff1d63 !important;
+    }
+  }
+
+  .mapping-error {
+    color: #ff1d63 !important;
+  }
+
+  // 选中高亮 hover高亮 拖拽高亮
+  .tree-active,
+  .tree-hover,
+  .tree-drag {
+    background-color: #ebf1fc;
+    a {
+      span {
+        color: #3e73e3;
+      }
+    }
+    ul {
+      background-color: #fff !important;
+      li {
+        span {
+          color: $text-color;
+        }
+      }
+    }
+    span.tree-sign {
+      color: #ff1d63 !important;
+    }
+  }
+
+  .tree-hover {
+    &.tree-active {
+      background-color: #ebf1fc !important;
+    }
+
+    &ul {
+      background-color: white !important;
+    }
+  }
+
+  .tree-drag {
+    border: 2px solid #3e73e3;
+  }
+}
+
+.tree-container {
+  height: calc(100% - 50px);
+  position: relative;
+}
+
+// 树的样式
+.tree-main {
+  height: 100%;
+
+  .search-container {
+    width: 100%;
+    position: relative;
+    height: 32px;
+    margin: 0 !important;
+    clear: both;
+
+    .search-input {
+      max-width: 285px;
+      width: 100%;
+      float: left;
+
+      .el-input {
+        position: relative;
+        &::after {
+          content: " ";
+          display: block;
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          cursor: default;
+          background-image: url("~@/assets/imgs/search.svg");
+          left: 8px;
+          top: 8px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+        input {
+          padding-left: 28px;
+        }
+      }
+    }
+
+    .search-select {
+      width: 100px;
+      float: right;
+      padding-right: 18px;
+      cursor: pointer !important;
+
+      .el-select__tags {
+        display: none !important;
+      }
+
+      &:after {
+        content: "展开/收起";
+        position: absolute;
+        top: 7px;
+        left: 10px;
+      }
+    }
+  }
+
+  .multiply-select {
+    padding-left: 17px;
+    padding-left: 17px;
+  }
+
+  .ztree-container {
+    padding: 0 0 0 0;
+    position: relative;
+
+    .list-container {
+      width: calc(100% - 14px);
+      height: 100%;
+      padding-right: 14px;
+
+      &.marginTop {
+        margin-top: 44px;
+        height: calc(100% - 44px);
+      }
+    }
+
+    &.active {
+      border: 2px solid $color-primary !important;
+      border-radius: 2px;
+    }
+  }
+
+  .operation-bar {
+    color: $color-primary;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top: 1px solid $border-color;
+    background-color: white;
+
+    span {
+      cursor: pointer;
+      &::after {
+        color: #515a6e !important;
+        content: " | ";
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+      &:last-child {
+        &::after {
+          content: "";
+        }
+      }
+    }
+
+    .btn-disabled {
+      cursor: not-allowed;
+      color: #999999;
+    }
+
+    .btn-hide {
+      display: none;
+    }
+  }
+
+  .tree-tooltip {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    width: 96px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: $color-white;
+  }
+
+  .tips {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    min-width: 240px;
+    max-width: 500px;
+    background-color: $color-white;
+    border-radius: 4px;
+    border: 1px solid #dcdee2;
+    padding: 16px 8px;
+    z-index: 10000;
+
+    .name {
+      width: 100%;
+      color: $color-primary;
+      line-height: 24px;
+      font-weight: bold;
+      padding: 0 !important;
+      margin: 0 !important;
+      top: -1000;
+      left: -1000;
+    }
+
+    .desc {
+      background-color: $background_main;
+      line-height: 32px;
+      font-style: italic;
+      padding: 0 6px !important;
+      margin: 0 !important;
+      white-space: normal;
+    }
+
+    .title {
+      font-weight: bold;
+      padding: 8px 0 0 0 !important;
+      margin: 0 0 2px 0 !important;
+    }
+
+    .card {
+      border-radius: 4px;
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      padding: 4px 8px;
+      float: left;
+      margin: 4px 4px 0 0;
+    }
+  }
+
+  // 拖拽情况下的鼠标样式
+  &.is-drag {
+    li.tree-hover_icon {
+      a {
+        cursor: move;
+      }
+      span {
+        cursor: move;
+      }
+      .button {
+        cursor: pointer;
+      }
+    }
+  }
+
+  // 产品分类维护tree的特殊样式
+  &.edit-tree {
+    .ztree {
+      .tree-hover_icon {
+        @include upDown-icon;
+      }
+    }
+  }
+
+  &.show-tree {
+    .ztree {
+      .tree-hover_icon {
+        @include leftRight-icon;
+      }
+    }
+  }
+
+  // 首页tree的特殊样式
+  &.menu-tree {
+    .ztree {
+      .tree-hover_icon {
+        &:after {
+          background-image: none;
+        }
+      }
+    }
+
+    .tree-hover {
+      background-color: $color-white;
+    }
+  }
+}
+
+.checkList {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 200px;
+  max-height: 500px;
+  overflow-x: auto;
+  overflow-y: auto;
+  padding: 12px;
+
+  .grandNode {
+    box-sizing: border-box;
+    color: #bbb;
+    width: 100%;
+    line-height: 24px;
+    &:before {
+      content: " ";
+      width: 12px;
+      height: 16px;
+      display: inline-block;
+      background-image: url("~@/assets/imgs/pickDown.svg");
+      margin-right: 4px;
+      background-repeat: no-repeat;
+      background-position-y: 8px;
+    }
+  }
+
+  .grandNode_empty {
+    &:before {
+      content: null;
+    }
+  }
+
+  .parentNode {
+    box-sizing: border-box;
+    color: #bbb;
+    width: 100%;
+    padding-left: 12px;
+    line-height: 24px;
+
+    &:before {
+      content: " ";
+      width: 12px;
+      height: 16px;
+      display: inline-block;
+      background-image: url("~@/assets/imgs/pickDown.svg");
+      margin-right: 4px;
+      background-repeat: no-repeat;
+      background-position-y: 8px;
+    }
+  }
+
+  .node {
+    box-sizing: border-box;
+    color: #409eff;
+    width: 100%;
+    padding-left: 26px;
+    line-height: 28px;
+  }
+
+  .node-more {
+    &::before {
+      content: " ";
+      width: 12px;
+      height: 16px;
+      display: inline-block;
+      background-image: url("~@/assets/imgs/pickUp.svg");
+      margin-right: 4px;
+      background-repeat: no-repeat;
+      background-position-y: 6px;
+    }
+  }
+}
+
+.no-scroll {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+  padding: 0 !important;
+}
+
+// 添加节点弹窗
+.add-node-dialog {
+  .el-select__tags {
+    .el-tag {
+      display: none;
+    }
+  }
+}
+
+// sign 的显示
+.showSign_Add {
+  .sign-existAdd {
+    display: inline !important;
+    color: $color-existAdd !important;
+  }
+  .a_existAdd {
+    span {
+      color: $color-father_active !important;
+    }
+  }
+}
+.showSign_Rename {
+  .sign-existRename {
+    display: inline !important;
+    color: $color-existRename !important;
+  }
+  .a_existRename {
+    span {
+      color: $color-father_active !important;
+    }
+  }
+}
+.showSign_Move {
+  .sign-existMove {
+    display: inline !important;
+    color: $color-existMove !important;
+  }
+  .a_existMove {
+    span {
+      color: $color-father_active !important;
+    }
+  }
+}
+.showSign_UM {
+  .sign-existUnMap {
+    display: inline !important;
+    color: $color-existUnMap !important;
+  }
+  .a_existUnMap {
+    span {
+      color: $color-father_active !important;
+    }
+  }
+}
+.showSign_Delete {
+  .sign-deleteMapped {
+    display: inline !important;
+    color: $color-deleteMapped !important;
+  }
+  .a_deleteMapped {
+    span {
+      color: $color-father_active !important;
+    }
+  }
+}
+.showSign_MM {
+  .sign-mulMapped {
+    display: inline !important;
+    color: $color-mulMapped !important;
+  }
+  .a_mulMapped {
+    span {
+      color: $color-father_active !important;
+    }
+  }
+}
+.showSign_Source {
+  .source-sign {
+    display: inline !important;
+  }
+}
+
+// checkbox 的显示
+.showCheck {
+  .chk {
+    display: inline-block !important;
+  }
+}
+
+.menu-tree {
+  .ztree-container{
+    padding: 12px 0 12px 12px;
+    border-radius: 4px;
+    border: 1px solid #DCDFE6;
+  }
+  
+  // .ztree li span {
+  //   font-size: 12px;
+  //   line-height: 24px;
+  // }
+
+  // .ztree li a {
+  //   height: 24px;
+  // }
+
+  // .ztree li span.button.noline_open {
+  //   background-position-y: 2px;
+  // }
+  // .ztree li span.button.noline_close {
+  //   background-position-y: 2px;
+  // }
+}

@@ -1,0 +1,33 @@
+$color-white: rgba(255, 255, 255, 1);
+$color-white_opacity: rgba(255, 255, 255, 0.65);
+$color-black: #000000;
+$color-red: #ed4014;
+$color-dark: #909399;
+$color-grey: #cccccc;
+$color-primary: #3E73E3;
+$color-primary_hover: #2d8cf0;
+$color-dark_btn: #222F76;
+
+$background_header: #222F76;
+$background_main: #f5f7fa;
+
+
+$text-color: #515a6e;
+$title-color: #17233d;
+$border-color: #eeeeee;
+$shadow-color: rgba(163, 163, 163, 0.3);
+
+$menu-color_hover: #222f76;
+
+
+@mixin box-shadow {
+  background: $color-white;
+  box-shadow: 0 1px 2px 0 $shadow-color;
+  border-radius: 6px;
+}
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

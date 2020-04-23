@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>描述变更</title>
+    <desc>Created with Sketch.</desc>
+    <g id="改1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-772.000000, -188.000000)">
+            <g id="描述变更" transform="translate(772.000000, 188.000000)">
+                <path d="M0.5,0 L9.5,0 C9.77614237,-1.06237683e-16 10,0.223857625 10,0.5 L10,10.9729537 C10,11.2490961 9.77614237,11.4729537 9.5,11.4729537 C9.44625895,11.4729537 9.39286935,11.4642898 9.34188612,11.4472954 L5.15811388,10.0527046 C5.05548048,10.0184935 4.94451952,10.0184935 4.84188612,10.0527046 L0.658113883,11.4472954 C0.396142224,11.5346193 0.112982237,11.3930393 0.025658351,11.1310676 C0.00866393949,11.0800844 2.28625985e-16,11.0266948 0,10.9729537 L0,0.5 C-3.38176876e-17,0.223857625 0.223857625,5.07265313e-17 0.5,0 Z" id="矩形" fill="#C2C2C2"></path>
+                <line x1="2.5" y1="2.82407407" x2="7.5" y2="2.82407407" id="路径-4" stroke="#FFFFFF" stroke-width="0.972222222" transform="translate(5.000000, 2.824074) rotate(-0.000000) translate(-5.000000, -2.824074) "></line>
+                <line x1="2.5" y1="5.41666667" x2="7.5" y2="5.41666667" id="路径-4" stroke="#FFFFFF" stroke-width="0.972222222" transform="translate(5.000000, 5.416667) rotate(-0.000000) translate(-5.000000, -5.416667) "></line>
+            </g>
+        </g>
+    </g>
+</svg>

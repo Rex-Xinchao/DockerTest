@@ -1,0 +1,49 @@
+.container-horizontal, .container-vertical {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  flex-basis: auto;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.container-horizontal {
+  flex-direction: row;
+}
+
+.container-vertical {
+  flex-direction: column;
+}
+
+.header, .footer {
+  flex-shrink: 0;
+  padding: 0 8px;
+  height: 60px;
+  line-height: 60px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 240px;
+  padding: 0 0 16px 16px;
+}
+
+.main {
+  flex: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
+}
+
+.powerBy {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(68,68,68,.5);
+  font-size: 11px;
+  background-color: #f5f7fa;
+  line-height: 40px;
+}

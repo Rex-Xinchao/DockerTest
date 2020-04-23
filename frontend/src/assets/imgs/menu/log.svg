@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Menu/icon/维护日志</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu/icon/维护日志" transform="translate(-1.000000, -1.000000)">
+            <g>
+                <rect id="矩形" opacity="0.979329427" x="0" y="0" width="22" height="22"></rect>
+                <g id="编组-8" transform="translate(2.214844, 1.500000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.988">
+                    <path d="M1.32809365,4.64038462 L1.32809365,3.25192308 C1.32809365,1.71827081 2.51730922,0.475 3.98428098,0.475 L14.6090303,0.475 C16.0760021,0.475 17.2652176,1.71827081 17.2652176,3.25192308 C17.2652176,6.02884615 17.2652176,6.12517483 17.2652176,7.51363636 M8.06070245,18.525 C6.73260878,18.525 6.64046831,18.525 3.98428098,18.525 C2.51730922,18.525 1.32809365,17.2817292 1.32809365,15.7480769 L1.32809365,13.6653846" id="形状"></path>
+                    <line x1="0" y1="6.26237458" x2="2.65618729" y2="6.26237458" id="路径-5"></line>
+                    <line x1="0" y1="11.9067726" x2="2.65618729" y2="11.9067726" id="路径-5"></line>
+                    <line x1="1.32809365" y1="7.59046823" x2="1.32809365" y2="10.2466555" id="路径-6"></line>
+                    <g id="编组-13" transform="translate(7.110815, 7.590468)">
+                        <circle id="椭圆形" cx="5.31237458" cy="5.31237458" r="5.31237458"></circle>
+                        <polyline id="路径-7" points="5.31237458 2.27673196 5.31237458 6.07128524 8.3480172 6.07128524"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

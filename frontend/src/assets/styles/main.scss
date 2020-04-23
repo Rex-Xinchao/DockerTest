@@ -1,0 +1,106 @@
+@import "common";
+@import "./tools/container";
+@import "./tools/menu";
+@import "./tools/scroll";
+@import "./tools/arrow";
+@import "./tools/element-rewrite";
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #515a6e;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // 字体禁止选中
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#app {
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 0;
+}
+
+.layout {
+  height: 100%;
+
+  .sidebar-main {
+    width: 100%;
+    height: 100%;
+    padding: 16px 8px;
+    background-color: $color-white;
+  }
+
+  .container-main {
+    background-color: white;
+  }
+}
+
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+input {
+  cursor: text !important;
+}
+
+.cursor-pointer {
+  input {
+    cursor: pointer !important;
+  }
+}
+
+.error {
+  padding: 10%;
+  text-align: center;
+  .error_img {
+    width: 300px;
+    height: 190px;
+    background: url("~@/assets/imgs/error.svg") no-repeat;
+    margin: 0 auto;
+  }
+}
+
+.product-li {
+  .sign {
+    font-style: normal;
+    font-size: 12px;
+    color: #464646;
+    background: #ebf1fc;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    margin-left: 2px;
+    padding: 0 4px;
+    border-radius: 2px;
+    font-weight: normal;
+  }
+}
+
+.app-main {
+  height: 100%;
+  width: 100%;
+}

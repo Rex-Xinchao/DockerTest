@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Menu/icon/产品分类维护</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu/icon/产品分类维护" transform="translate(-1.000000, -1.000000)">
+            <g>
+                <rect id="矩形" x="0" y="0" width="22" height="22"></rect>
+                <g id="产品分类维护" transform="translate(2.000000, 2.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                    <rect id="矩形" stroke-width="0.985263158" x="1.01392579e-13" y="1.01392579e-13" width="7.35603715" height="7.35603715" rx="1.3374613"></rect>
+                    <rect id="矩形" stroke-width="0.985263158" x="1.01392579e-13" y="9.69603715" width="7.35603715" height="7.35603715" rx="1.3374613"></rect>
+                    <rect id="矩形" stroke-width="0.985263158" x="9.69659443" y="-9.35474608e-15" width="7.35603715" height="7.35603715" rx="1.3374613"></rect>
+                    <g id="edit-3" transform="translate(9.696594, 10.309598)" stroke-width="0.80247678">
+                        <line x1="3.34365325" y1="6.6873065" x2="6.6873065" y2="6.6873065" id="路径"></line>
+                        <path d="M5.01547988,0.557275542 C5.21457525,0.358180167 5.50476308,0.280424571 5.77673242,0.353298537 C6.04870176,0.426172502 6.261134,0.638604738 6.33400796,0.910574078 C6.40688193,1.18254342 6.32912633,1.47273125 6.13003096,1.67182663 L1.48606811,6.31578947 L0,6.6873065 L0.371517028,5.20123839 L5.01547988,0.557275542 Z" id="路径"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

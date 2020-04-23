@@ -1,0 +1,124 @@
+@import "./tools/tree";
+@import "./tools/chart";
+
+.index-main {
+  padding: 20px 20px 15px 20px;
+  background-color: $background_main;
+
+  .sidebar {
+    width: 300px;
+    border-radius: 6px 0 0 6px !important;
+    background-color: $color-white;
+    @include box-shadow;
+    position: relative;
+
+    .sidebar-title {
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+      line-height: 50px;
+      font-weight: normal;
+      color: $color-primary;
+    }
+  }
+
+  .container-main {
+    border-radius: 4px;
+    margin-left: 30px;
+    background-color: $color-white;
+    @include box-shadow;
+  }
+
+  .move-w {
+    width: 4px;
+    height: 100%;
+    cursor: w-resize;
+    position: absolute;
+    top: 0;
+    right: -2px;
+  }
+
+  .siderbar-more {
+    width: 16px;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: -16px;
+    background-color: white;
+    border-radius: 0 6px 6px 0 !important;
+
+    i {
+      display: block;
+      width: 16px;
+      height: 16px;
+      background-image: url("~@/assets/imgs/siderbarMore.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: calc(50% - 8px);
+      background-position-x: 3px;
+    }
+  }
+}
+
+.border-dash {
+  border: 2px dotted #409eff;
+  padding: 4px;
+}
+
+.left-arrow-icon_short,
+.right-arrow-icon_short {
+  overflow: hidden;
+}
+
+.left-line-icon_short {
+  overflow: hidden;
+  margin-left: 8px;
+  display: inline-block;
+  width: 50px;
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    border-top: 1px dashed #cccccc;
+    width: calc(100% - 17px);
+  }
+}
+
+.right-line-icon_short {
+  overflow: hidden;
+  margin-left: 8px;
+  display: inline-block;
+  width: 50px;
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    border-top: 1px dashed #cccccc;
+    width: calc(100% - 17px);
+  }
+}
+
+.text,
+.text-name,
+.sub-text {
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.text-name {
+  width: auto;
+  text-align: center;
+}
+
+.text-weight {
+  overflow: hidden;
+  display: inline-block;
+  background: rgba(69, 110, 232, 0.1);
+  padding: 0 4px;
+  color: #456ee8;
+}
